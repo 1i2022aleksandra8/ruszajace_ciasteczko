@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background: white;
+    padding: 40px 30px;
+    width: 260px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    min-height: 300px;
+    position: relative;
+    padding-top: 100px;
+}
+
+#ciasteczko {
+    width: 100px;
+    height: auto;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+}
+
+#guziczek {
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffb347;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+
+    position: absolute;
+    bottom: 25px;
+}
+
+#guziczek.najechane {
+    background-color: #ff9800;
+    transform: scale(1.12);
+}
+
+#guziczek.kolor {
+    background-color: rgb(199, 199, 199);
+}
